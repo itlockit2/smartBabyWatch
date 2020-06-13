@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "549299294824",
+    "firebase_url": "https://sw-maestro-dedd8.firebaseio.com",
+    "project_id": "sw-maestro-dedd8",
+    "storage_bucket": "sw-maestro-dedd8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:549299294824:android:02ac04d9023a5fd6",
+        "android_client_info": {
+          "package_name": "com.doif.ccbebe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "549299294824-oetsq95a507gh7dajnot99f0bv5q5q1j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.doif.ccbebe",
+            "certificate_hash": "25ff28f4eb54f481252febd422b4b4414bf032d0"
+          }
+        },
+        {
+          "client_id": "549299294824-q3deb9o0gpn0fnjoij138oabctb2omkb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADzyh1INi9_N5nnLjggJMijgh6JEZpDkg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "549299294824-q3deb9o0gpn0fnjoij138oabctb2omkb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SetBabyActivity">
+
+
+    <ImageView
+        android:id="@+id/backFloatingButton_set_baby"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="16dp"
+        app:srcCompat="@drawable/ic_left_circle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <!-- photo -->
+    <FrameLayout
+        android:id="@+id/set_baby_photo_layout"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2">
+
+        <ImageView
+            android:id="@+id/set_baby_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bc_photo"
+            app:srcCompat="@drawable/ic_launcher" />
+
+        <ImageView
+            android:id="@+id/set_baby_camera"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:padding="8dp"
+            android:layout_gravity="bottom|right"
+            android:background="@drawable/bc_photo"
+            app:srcCompat="@drawable/ic_camera"/>
+
+    </FrameLayout>
+    <!-- photo end-->
+
+    <!-- nickname -->
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/spoqahansans_regular"
+        android:gravity="start"
+        android:letterSpacing="-0.04"
+        android:text="@string/nickname"
+        android:textColor="@color/blackLight"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@id/set_baby_nickname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.doif.ccbebe.util.DefaultEdittext
+        android:id="@+id/set_baby_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="30dp"
+        app:text="@string/nickname_ex"
+        app:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/set_baby_sex"
+        />
+    <!-- nickname end -->
+
+    <!-- sex -->
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/spoqahansans_regular"
+        android:gravity="start"
+        android:letterSpacing="-0.04"
+        android:text="@string/sex"
+        android:textColor="@color/blackLight"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@id/set_baby_sex"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/set_baby_sex"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal"
+        android:background="@drawable/bc_edit_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/set_baby_birth">
+
+        <TextView
+            android:id="@+id/set_baby_female"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bc_layout_green"
+            android:text="@string/female"
+            android:fontFamily="@font/spoqahansans_regular"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:letterSpacing="-0.04"/>
+
+        <TextView
+            android:id="@+id/set_baby_male"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:text="@string/male"
+            android:fontFamily="@font/spoqahansans_regular"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/grayDark"
+            android:letterSpacing="-0.04"/>
+
+    </LinearLayout>
+    <!-- sex end -->
+
+    <!-- birth -->
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/spoqahansans_regular"
+        android:gravity="start"
+        android:letterSpacing="-0.04"
+        android:text="@string/birth"
+        android:textColor="@color/blackLight"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@id/set_baby_birth"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.doif.ccbebe.util.DefaultEdittext
+        android:id="@+id/set_baby_birth"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="30dp"
+        app:hint="@string/birth_ex"
+        app:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/set_baby_button"/>
+
+    <!--<androidx.constraintlayout.widget.ConstraintLayout-->
+        <!--android:id="@+id/set_baby_birth"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="56dp"-->
+        <!--android:layout_marginStart="40dp"-->
+        <!--android:layout_marginEnd="40dp"-->
+        <!--android:layout_marginBottom="20dp"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:background="@drawable/bc_edit_text"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintBottom_toTopOf="@id/set_baby_button">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_marginStart="20dp"-->
+            <!--android:text="@string/birth_ex"-->
+            <!--android:fontFamily="@font/spoqahansans_regular"-->
+            <!--android:textSize="16sp"-->
+            <!--android:textColor="@color/blackLight"-->
+            <!--android:letterSpacing="-0.04"-->
+            <!--android:gravity="center_vertical"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintTop_toTopOf="parent"-->
+            <!--app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--/>-->
+
+        <!--<Button-->
+            <!--android:layout_width="56dp"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:background="@drawable/bc_drop_down"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintTop_toTopOf="parent"-->
+            <!--app:layout_constraintBottom_toBottomOf="parent"/>-->
+
+    <!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+    <!-- birth end -->
+
+    <Button
+        android:id="@+id/set_baby_button"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/bc_green_button"
+        android:text="@string/set_baby_title"
+        android:fontFamily="@font/notosanscjkkr_medium"
+        android:gravity="center"
+        android:letterSpacing="-0.04"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.90"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

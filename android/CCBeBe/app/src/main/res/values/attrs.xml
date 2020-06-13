@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="custom">
+        <attr name="container" format="reference|integer"/>
+
+        <attr name="image" format="reference|integer"/>
+
+        <attr name="hint" format="reference|string"/>
+        <attr name="hintColor" format="reference|integer"/>
+
+        <attr name="text" format="reference|string"/>
+        <attr name="textColor" format="reference|integer"/>
+
+        <attr name="inputType" format="reference|string"/>
+
+        <attr name="time" format="reference|string"/>
+        <attr name="timeColor" format="reference|integer"/>
+
+        <attr name="state" format="reference|string"/>
+        <attr name="stateColor" format="reference|integer"/>
+
+        <attr name="hello" format="reference|string"/>
+        <attr name="helloColor" format="reference|integer"/>
+
+        <attr name="birth" format="reference|string"/>
+        <attr name="birthColor" format="reference|integer"/>
+
+        <attr name="title" format="reference|string"/>
+        <attr name="description" format="reference|string"/>
+
+        <attr name="date" format="reference|string"/>
+
+
+    </declare-styleable>
+</resources>

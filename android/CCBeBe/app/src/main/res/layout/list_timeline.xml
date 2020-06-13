@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    
+    <com.doif.ccbebe.util.MainBalloon
+        android:id="@+id/main_balloon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        app:hello="@string/hello_default"
+        app:helloColor="@color/blackLight"
+        app:birth="@string/birth_default"
+        app:birthColor="@color/grayBasic">
+
+    </com.doif.ccbebe.util.MainBalloon>
+
+    <com.doif.ccbebe.util.TimelineButton
+        android:id="@+id/timeline_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:time="@string/time_default"
+        app:timeColor="@color/white"
+        app:state="@string/timeline_update"
+        app:stateColor="@color/white">
+    </com.doif.ccbebe.util.TimelineButton>
+
+</LinearLayout>

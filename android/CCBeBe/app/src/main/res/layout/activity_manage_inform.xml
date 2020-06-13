@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ManageInformActivity">
+
+    <ImageView
+        android:id="@+id/backFloatingButton_manage_inform"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="16dp"
+        app:srcCompat="@drawable/ic_left_circle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/manage_inform_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/management_user_inform"
+        android:fontFamily="@font/notosanscjkkr_bold"
+        android:textSize="28sp"
+        android:textColor="@color/blackLight"
+        android:letterSpacing="-0.04"
+        android:lineSpacingExtra="14sp"
+        android:gravity="center_horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.255"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/management_user_inform_description"
+        android:fontFamily="@font/notosanscjkkr_bold"
+        android:textSize="20sp"
+        android:textColor="@color/grayBasic"
+        android:letterSpacing="-0.04"
+        android:lineSpacingExtra="8sp"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toBottomOf="@id/manage_inform_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:gravity="start"
+        android:text="@string/change_email"
+        android:fontFamily="@font/spoqahansans_regular"
+        android:textSize="12sp"
+        android:textColor="@color/blackLight"
+        android:letterSpacing="-0.04"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/new_email_edittext"
+        />
+
+    <com.doif.ccbebe.util.DefaultEdittext
+        android:id="@+id/new_email_edittext"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="30dp"
+        app:inputType="email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/new_password_edittext"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:gravity="start"
+        android:text="@string/change_password"
+        android:fontFamily="@font/spoqahansans_regular"
+        android:textSize="12sp"
+        android:textColor="@color/blackLight"
+        android:letterSpacing="-0.04"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/new_password_edittext"
+        />
+
+    <com.doif.ccbebe.util.DefaultEdittext
+        android:id="@+id/new_password_edittext"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        app:inputType="password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/save_change_button"
+        />
+
+    <Button
+        android:id="@+id/save_change_button"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/bc_pink_button"
+        android:text="@string/save_change"
+        android:fontFamily="@font/notosanscjkkr_medium"
+        android:gravity="center"
+        android:letterSpacing="-0.04"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.83"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.95">
+
+        <TextView
+            android:id="@+id/sign_out_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingEnd="16dp"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:letterSpacing="-0.05"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            android:text="@string/sign_out"
+            android:fontFamily="@font/notosanscjkkr_regular"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="1dp"
+            android:layout_height="6dp"
+            android:layout_gravity="center"
+            android:background="@color/grayBasic"/>
+
+        <TextView
+            android:id="@+id/withdrawal_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingStart="16dp"
+            android:background="@color/white"
+            android:textSize="14sp"
+            android:textColor="@color/grayDark"
+            android:text="@string/withdraw"
+            android:letterSpacing="-0.05"
+            android:gravity="center_horizontal"
+            android:fontFamily="@font/notosanscjkkr_regular"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

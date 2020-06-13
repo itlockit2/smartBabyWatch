@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/diary_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/diary"
+            android:fontFamily="@font/notosanscjkkr_bold"
+            android:textSize="28sp"
+            android:textColor="@color/blackLight"
+            android:letterSpacing="-0.04"
+            android:lineSpacingExtra="14sp"
+            android:gravity="center|bottom"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/diary_title_description"
+            android:fontFamily="@font/notosanscjkkr_bold"
+            android:textSize="20sp"
+            android:textColor="@color/grayBasic"
+            android:letterSpacing="-0.04"
+            android:gravity="center|top"/>
+
+    </LinearLayout>
+
+    <com.doif.ccbebe.util.DiaryThumbnailLayout
+        android:id="@+id/diary_thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        app:time="@string/time_default"
+        app:date="@string/today"
+        app:description="@string/d_day_ex">
+
+    </com.doif.ccbebe.util.DiaryThumbnailLayout>
+
+</LinearLayout>

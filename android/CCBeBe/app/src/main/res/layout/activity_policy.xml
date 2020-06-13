@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".PolicyActivity">
+
+    <ImageView
+        android:id="@+id/backFloatingButton_policy"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="16dp"
+        app:srcCompat="@drawable/ic_left_circle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/policy_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="163dp"
+        android:fontFamily="@font/notosanscjkkr_bold"
+        android:gravity="center_horizontal"
+        android:letterSpacing="-0.04"
+        android:text="@string/term_of_use"
+        android:textColor="@color/blackLight"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/policy_description"/>
+
+    <TextView
+        android:id="@+id/policy_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/notosanscjkkr_bold"
+        android:gravity="center_horizontal"
+        android:letterSpacing="-0.04"
+        android:text="@string/term_of_use_description"
+        android:textColor="@color/grayBasic"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <com.doif.ccbebe.util.PolicyLayout
+        android:id="@+id/agree_service_layout"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        app:text="@string/agree_service"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/agree_policy_layout"/>
+
+    <com.doif.ccbebe.util.PolicyLayout
+        android:id="@+id/agree_policy_layout"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        app:text="@string/agree_privacy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/agree_all_layout"/>
+
+    <com.doif.ccbebe.util.PolicyLayout
+        android:id="@+id/agree_all_layout"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        app:text="@string/agree_all"
+        app:container="@drawable/bc_policy_all_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/policy_next_button"/>
+
+    <Button
+        android:id="@+id/policy_next_button"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/bc_green_button"
+        android:fontFamily="@font/notosanscjkkr_medium"
+        android:gravity="center"
+        android:letterSpacing="-0.04"
+        android:text="@string/next"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9057" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

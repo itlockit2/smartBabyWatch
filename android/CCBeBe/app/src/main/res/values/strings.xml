@@ -1,0 +1,162 @@
+<resources>
+    <string name="app_name">씨씨베베</string>
+
+    <!-- StartActivity -->
+    <string name="start_description">
+        간편하게 로그인하고\n
+        씨씨베베를 이용해보세요.
+    </string>
+    <string name="start_kakao">카카오톡으로 시작하기</string>
+    <string name="login_email">이메일로 로그인</string>
+    <string name="signup_email">이메일로 회원가입</string>
+    <!-- StartActivity end -->
+
+    <!-- fcm -->
+    <string name="default_notification_channel_name" translatable="true">News</string>
+    <!-- fcm end -->
+
+    <!-- Timeline -->
+    <string name="time_default">PM 01:45</string>
+    <string name="timeline_update">어제 하루일기가 업데이트 되었어요.</string>
+    <!-- Timeline end-->
+
+    <!-- state -->
+    <string name="update">어제 하루일기가 업데이트 되었어요.</string>
+    <string name="shoot">🎥 촬영이 시작되었어요.</string>
+    <string name="awake">😄 베베가 일어났어요.</string>
+    <string name="sleep">😴 배배가 잠들었어요.</string>
+    <string name="danger">⚠️ 긴급상황이 발생했어요!</string>
+    <string name="cry">😢 베베가 울었어요.</string>
+    <string name="anger">😡 아이가 화가 났어요.</string>
+    <string name="disgust">😠 불편한 상황이에요.</string>
+    <string name="fear">😳 아이가 겁에 질렸어요.</string>
+    <string name="happy">😆 아이가 웃고 있어요.</string>
+    <string name="sad">😭 아이가 슬퍼해요.</string>
+    <string name="surprise">🤭 아이가 놀랐어요.</string>
+    <string name="neutral">🙂 아이가 평온한 상태에요.</string>
+    <!-- state end -->
+
+    <!-- balloon -->
+    <string name="hello_default">베베야 안녕!</string>
+    <string name="birth_default">오늘은 베베가 태어난지 134일</string>
+    <!--<string name="birth_default">D-134</string>-->
+    <!-- balloon end -->
+
+    <!-- setting -->
+
+    <string name="set_baby_title">아기 프로필 등록</string>
+    <string name="management_baby_profile">아기 프로필 관리</string>
+    <string name="management_baby_profile_description">‘베베’의 사진을 업로드해주세요.</string>
+    <string name="nickname">닉네임</string>
+    <string name="nickname_ex">베베</string>
+    <string name="sex">성별</string>
+    <string name="male">남아</string>
+    <string name="female">여아</string>
+    <string name="birth">생년월일</string>
+    <string name="birth_ex">yyyymmdd (20190128)</string>
+
+
+    <string name="diary_description">7월 14일의 하루일기가 새로 올라왔습니다.</string>
+    <string name="entire_timeline">전체 타임라인</string>
+    <string name="setting_device">디바이스 설정</string>
+
+    <string name="setting_alarm">알림 설정</string>
+    <string name="setting_alarm_title">알림설정</string>
+    <string name="setting_alarm_description">알림을 설정하셔서 항상 아이에 대한\n알림을 확인하세요.</string>
+    <string name="setting_danger_alarm">위험상황 알림 설정</string>
+    <string name="setting_danger_alarm_description">위험상황이 발견되면 바로 알림이 울립니다.\n알림을 켜시는걸 추천합니다.</string>
+    <string name="setting_cry_alarm">아기울음 알림 설정</string>
+    <string name="setting_cry_alarm_description">아기가 울게되면 알림이 울립니다.</string>
+    <string name="setting_diary_alarm">하루일기 생성 알림 설정</string>
+    <string name="setting_diary_alarm_description">하루일기 영상이 생성되면 매일 알림이 울리게 됩니다.</string>
+
+    <string name="setting_inform">회원정보관리</string>
+    <string name="change_email">이메일 변경</string>
+    <string name="change_password">비밀번호 변경</string>
+    <string name="save_change">변경사항 저장</string>
+
+    <!-- setting end -->
+
+    <!-- management user -->
+    <string name="sign_up">회원가입</string>
+    <string name="sign_up_description">회원가입을 위해 이메일과 비밀번호를\n입력해주세요.</string>
+
+    <string name="sign_in">로그인</string>
+    <string name="sign_in_email">이메일로 로그인</string>
+    <string name="sign_in_description">로그인을 위해 이메일과 비밀번호를\n입력해주세요.</string>
+    <string name="forgot_email">비밀번호를 잊으셨나요?</string>
+
+    <string name="sign_out">로그아웃</string>
+    <string name="sign_out_description">로그아웃 하시겠어요?</string>
+    <string name="cancel">취소</string>
+
+    <string name="withdraw">회원탈퇴</string>
+    <string name="withdraw_description">정말 회원탈퇴 하시겠어요?</string>
+
+    <string name="find_password">비밀번호 찾기</string>
+    <string name="find_password_description">비밀번호를 찾기 위해 이메일을\n입력해주세요.</string>
+    <string name="send_temp_password">임시 비밀번호 전송</string>
+    <string name="end_sending_password">전송완료</string>
+    <string name="end_sending_password_description">입력해주신 이메일로\n임시 비밀번호를 전송했습니다.</string>
+    <string name="end_sending_email">hello@world.com</string>
+
+    <string name="input_email">이메일을 입력해주세요</string>
+    <string name="input_password">비밀번호를 입력해주세요</string>
+    <string name="check_password">비밀번호 확인</string>
+
+    <string name="management_user_inform">회원정보관리</string>
+    <string name="management_user_inform_description">회원정보를 관리하세요.</string>
+    <!-- management user end -->
+
+    <!-- term of use -->
+    <string name="term_of_use">이용약관</string>
+    <string name="term_of_use_description">씨씨베베를 사용하기 위한\n필수 약관에 동의해주세요.</string>
+    <string name="agree_service">서비스 이용약관 동의</string>
+    <string name="agree_privacy">개인정보 취급방침 동의</string>
+    <string name="agree_all">전체 약관에 동의합니다.</string>
+    <string name="next">다음</string>
+    <string name="see_more">보기</string>
+    <!-- term of use end -->
+
+    <!-- diary -->
+    <string name="diary">하루일기</string>
+    <!--<string name="diary">diary</string>-->
+    <string name="diary_title_description">매일매일 추가되는 하루일기를\n확인하세요.</string>
+    <string name="today">오늘</string>
+    <string name="d_day_ex">베베 100일째 되는 날</string>
+    <!-- diary end-->
+
+    <!-- success sign up -->
+    <string name="success_sign_up">가입완료</string>
+    <string name="success_sign_up_description">씨씨베베의 서비스를\n이제 경험해보세요.</string>
+    <string name="start">시작하기</string>
+    <!-- success sign up end -->
+
+    <!-- camera permission -->
+    <!-- camera permission end -->
+
+    <!-- type -->
+    <string name="select_type_title">어떤 타입으로\n시작하시겠어요?</string>
+    <string name="change_type_title">디바이스 타입을\n변경하시겠어요?</string>
+    <string name="type_now_status_monitoring">현재 모니터링을 하고 있습니다.</string>
+    <string name="type_now_status_shooting">현재 촬영을 하고 있습니다.</string>
+    <string name="type_monitoring">모니터링 스마트폰</string>
+    <string name="type_shoot">촬영 스마트폰</string>
+    <string name="save">저장</string>
+    <!-- type end -->
+
+    <!-- kakao login -->
+    <!-- kakao login end -->
+
+    <!-- select photo -->
+    <string name="camera">촬영하기</string>
+    <string name="gallery">사진앨범에서 선택하기</string>
+    <!-- select photo end -->
+
+    <!-- contact -->
+    <string name="contact_title">개발자에게 문의하기</string>
+    <string name="title">제목</string>
+    <string name="contents">내용</string>
+    <string name="contact">문의하기</string>
+
+</resources>

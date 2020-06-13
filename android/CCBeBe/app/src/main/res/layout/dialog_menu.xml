@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/setting_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:background="@drawable/bc_setting_diagram"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/setting_management_baby_profile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/blackLight"
+            android:letterSpacing="-0.05"
+            android:text="@string/management_baby_profile"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:gravity="center_horizontal"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textColor="@color/blueAwake"
+            android:letterSpacing="-0.05"
+            android:font="@font/notosanscjkkr_regular"
+            android:text="@string/management_baby_profile_description"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/setting_diary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/blackLight"
+            android:letterSpacing="-0.05"
+            android:text="@string/diary"
+            android:fontFamily="@font/notosanscjkkr_medium"
+            android:gravity="center_horizontal"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textColor="@color/blueAwake"
+            android:font="@font/notosanscjkkr_regular"
+            android:letterSpacing="-0.05"
+            android:text="@string/diary_description"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/setting_entire_timeline"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="14sp"
+        android:textColor="@color/blackLight"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/entire_timeline"
+        android:fontFamily="@font/notosanscjkkr_medium"
+        />
+
+    <TextView
+        android:id="@+id/setting_device"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="14sp"
+        android:textColor="@color/blackLight"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/setting_device"
+        android:fontFamily="@font/notosanscjkkr_medium"
+        />
+
+    <TextView
+        android:id="@+id/setting_alarm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="14sp"
+        android:textColor="@color/blackLight"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/setting_alarm"
+        android:fontFamily="@font/notosanscjkkr_medium"
+        />
+
+    <TextView
+        android:id="@+id/setting_contact"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="14sp"
+        android:textColor="@color/blackLight"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/contact_title"
+        android:fontFamily="@font/notosanscjkkr_medium"
+        />
+
+    <TextView
+        android:id="@+id/setting_inform"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="14sp"
+        android:textColor="@color/blackLight"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/setting_inform"
+        android:fontFamily="@font/notosanscjkkr_medium"
+        />
+
+</LinearLayout>

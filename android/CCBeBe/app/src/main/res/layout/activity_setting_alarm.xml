@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SettingAlarmActivity">
+
+    <ImageView
+        android:id="@+id/backFloatingButton_setting_alarm"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="16dp"
+        app:srcCompat="@drawable/ic_left_circle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/setting_alarm_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/setting_alarm_title"
+        android:fontFamily="@font/notosanscjkkr_bold"
+        android:textSize="28sp"
+        android:textColor="@color/blackLight"
+        android:gravity="center_horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/setting_alarm_description"
+        android:fontFamily="@font/notosanscjkkr_bold"
+        android:textSize="20sp"
+        android:textColor="@color/grayBasic"
+        android:letterSpacing="-0.04"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toBottomOf="@id/setting_alarm_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.doif.ccbebe.util.SettingAlarmLayout
+        android:id="@+id/setting_danger_alarm"
+        android:layout_width="0dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="10dp"
+        app:title="@string/setting_danger_alarm"
+        app:description="@string/setting_danger_alarm_description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/setting_cry_alarm"/>
+
+    <com.doif.ccbebe.util.SettingAlarmLayout
+        android:id="@+id/setting_cry_alarm"
+        android:layout_width="0dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="10dp"
+        app:title="@string/setting_cry_alarm"
+        app:description="@string/setting_cry_alarm_description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/setting_diary_alarm"/>
+
+    <com.doif.ccbebe.util.SettingAlarmLayout
+        android:id="@+id/setting_diary_alarm"
+        android:layout_width="0dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:title="@string/setting_diary_alarm"
+        app:description="@string/setting_diary_alarm_description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.95"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

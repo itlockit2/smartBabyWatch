@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/balloon_entire"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/balloon_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/balloon_main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/balloon_hello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:layout_marginBottom="157dp"
+            android:layout_marginStart="110dp"
+            android:layout_marginEnd="109dp"
+            android:text="@string/hello_default"
+            android:fontFamily="@font/notosanscjkkr_bold"
+            android:textSize="28sp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/balloon_birth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="69dp"
+            android:layout_marginTop="186dp"
+            android:layout_marginBottom="129dp"
+            android:textSize="20sp"
+            android:textColor="@color/grayBasic"
+            android:fontFamily="@font/spoqahansans_bold"
+            android:letterSpacing="-0.04"
+            android:lineSpacingExtra="8sp"
+            android:gravity="center_horizontal"
+            android:text="오늘 하우가 태어난지 134일"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/balloon_button_diary"
+            android:layout_width="89dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="233dp"
+            android:layout_marginBottom="78dp"
+            android:layout_marginStart="136dp"
+            android:layout_marginEnd="135dp"
+            android:background="@drawable/bc_button_dairy"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            >
+
+            <TextView
+                android:id="@+id/balloon_text_diary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="22dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="7dp"
+                android:textSize="12sp"
+                android:textColor="#ff6e98"
+                android:letterSpacing="-0.04"
+                android:text="@string/diary"
+                android:fontFamily="@font/notosanscjkkr_medium"
+                android:gravity="center_horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/balloon_photo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/bc_baby_photo"
+        app:srcCompat="@drawable/ic_launcher_round"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
